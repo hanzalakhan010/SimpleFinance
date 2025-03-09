@@ -1,236 +1,38 @@
 {
   "transactions": [
     {
-      "id": "1",
-      "date": "2025-03-08",
-      "description": "Grocery shopping",
-      "category": "Food",
+      "id": "2ea3",
+      "amount": 1000,
+      "type": "income",
+      "category": "Income",
       "categoryColor": "#3498db",
-      "amount": 78.45,
-      "type": "Expense"
+      "date": "2025-03-10",
+      "description": ""
     },
     {
-      "id": "2",
-      "date": "2025-03-05",
-      "description": "Monthly salary",
+      "id": "3c50",
+      "amount": 122,
+      "type": "income",
       "category": "Income",
       "categoryColor": "#27ae60",
-      "amount": 2500,
-      "type": "Income"
+      "date": "2025-03-10",
+      "description": ""
     },
     {
-      "id": "3",
-      "date": "2025-03-04",
-      "description": "Internet bill",
-      "category": "Bills",
-      "categoryColor": "#f57c00",
-      "amount": 59.99,
-      "type": "Expense"
-    },
-    {
-      "id": "4",
-      "date": "2025-03-03",
-      "description": "Restaurant dinner",
+      "id": "48f8",
+      "amount": 0,
+      "type": "income",
       "category": "Food",
       "categoryColor": "#3498db",
-      "amount": 42.35,
-      "type": "Expense"
+      "date": "2025-03-10",
+      "description": ""
     },
     {
-      "id": "5",
-      "date": "2025-03-02",
-      "description": "Gas station",
-      "category": "Transportation",
-      "categoryColor": "#9c27b0",
-      "amount": 35.68,
-      "type": "Expense"
-    },
-    {
-      "id": "6",
-      "date": "2025-03-01",
-      "description": "Movie tickets",
-      "category": "Entertainment",
-      "categoryColor": "#e74c3c",
-      "amount": 24.5,
-      "type": "Expense"
-    },
-    {
-      "id": "7",
-      "date": "2025-02-28",
-      "description": "Freelance payment",
-      "category": "Income",
-      "categoryColor": "#27ae60",
-      "amount": 350,
-      "type": "Income"
-    },
-    {
-      "id": "8",
-      "date": "2025-02-26",
-      "description": "Electricity bill",
-      "category": "Bills",
-      "categoryColor": "#f57c00",
-      "amount": 87.22,
-      "type": "Expense"
-    },
-    {
-      "id": "9",
-      "date": "2025-02-24",
-      "description": "Gym membership",
-      "category": "Health",
-      "categoryColor": "#1abc9c",
-      "amount": 45,
-      "type": "Expense"
-    },
-    {
-      "id": "10",
-      "date": "2025-02-22",
-      "description": "Online shopping",
+      "id": "d6b6",
+      "amount": 0,
+      "type": "income",
       "category": "Shopping",
       "categoryColor": "#f1c40f",
-      "amount": 128.75,
-      "type": "Expense"
-    },
-    {
-      "id": "11",
-      "date": "2025-02-20",
-      "description": "Phone bill",
-      "category": "Bills",
-      "categoryColor": "#f57c00",
-      "amount": 35.99,
-      "type": "Expense"
-    },
-    {
-      "id": "12",
-      "date": "2025-02-15",
-      "description": "Coffee shop",
-      "category": "Food",
-      "categoryColor": "#3498db",
-      "amount": 12.4,
-      "type": "Expense"
-    },
-    {
-      "id": "13",
-      "date": "2025-02-10",
-      "description": "Rent payment",
-      "category": "Housing",
-      "categoryColor": "#34495e",
-      "amount": 1200,
-      "type": "Expense"
-    },
-    {
-      "id": "14",
-      "date": "2025-02-05",
-      "description": "Monthly salary",
-      "category": "Income",
-      "categoryColor": "#27ae60",
-      "amount": 2500,
-      "type": "Income"
-    },
-    {
-      "id": "15",
-      "date": "2025-02-03",
-      "description": "Birthday gift from mom",
-      "category": "Gifts",
-      "categoryColor": "#e84393",
-      "amount": 100,
-      "type": "Income"
-    },
-    {
-      "id": "5355",
-      "amount": "2121",
-      "type": "expense",
-      "category": "Food",
-      "categoryColor": "#3498db",
-      "date": "2025-03-09",
-      "description": "UBADA"
-    },
-    {
-      "id": "7053",
-      "amount": "111",
-      "type": "expense",
-      "category": "Food",
-      "categoryColor": "#3498db",
-      "date": "2025-03-09",
-      "description": "hanzala"
-    },
-    {
-      "id": "4ff0",
-      "amount": "100",
-      "type": "expense",
-      "category": "Food",
-      "categoryColor": "#3498db",
-      "date": "2025-03-09",
-      "description": "hanzala"
-    },
-    {
-      "id": "ab69",
-      "amount": "111111",
-      "type": "expense",
-      "category": "Food",
-      "categoryColor": "#3498db",
-      "date": "2025-03-09",
-      "description": ""
-    },
-    {
-      "id": "4f09",
-      "amount": "1111",
-      "type": "expense",
-      "category": "Food",
-      "categoryColor": "#3498db",
-      "date": "2025-03-09",
-      "description": ""
-    },
-    {
-      "id": "e584",
-      "amount": "11111",
-      "type": "expense",
-      "category": "Food",
-      "categoryColor": "#3498db",
-      "date": "2025-03-09",
-      "description": ""
-    },
-    {
-      "id": "3047",
-      "amount": "1000",
-      "type": "expense",
-      "category": "Food",
-      "categoryColor": "#3498db",
-      "date": "2025-03-09",
-      "description": "hanzala"
-    },
-    {
-      "id": "e9cd",
-      "amount": "1111",
-      "type": "income",
-      "category": "Food",
-      "categoryColor": "#3498db",
-      "date": "2025-03-09",
-      "description": "hanzala"
-    },
-    {
-      "id": "a49b",
-      "amount": "1111",
-      "type": "income",
-      "category": "Income",
-      "categoryColor": "#3498db",
-      "date": "2025-03-09",
-      "description": "hanzala"
-    },
-    {
-      "id": "587c",
-      "amount": 1000000,
-      "type": "expense",
-      "category": "Food",
-      "categoryColor": "#3498db",
-      "date": "2025-03-09",
-      "description": "very big"
-    },
-    {
-      "id": "30ca",
-      "amount": 10000000000,
-      "type": "income",
-      "category": "Income",
-      "categoryColor": "#3498db",
       "date": "2025-03-10",
       "description": ""
     }

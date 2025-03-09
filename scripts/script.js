@@ -29,7 +29,7 @@ function loadCategories() {
       for (let category of data) {
         categories = data;
         document.getElementById("transCategory").innerHTML += `
-        <option style = 'background-color:${category.color}'>${category.name}</option>`;
+        <option style = 'background-color:${category.color}' value = '${category.name}'>${category.name}</option>`;
       }
     });
 }
@@ -106,22 +106,29 @@ function addTrans() {
   let category = document.getElementById("transCategory").value;
   let date = document.getElementById("transDate").value;
   let description = document.getElementById("transDescription").value;
-  let categoryColor = categories.find((cate) => (cate.name = category))?.[
+  let categoryColor = categories.find((cate) => (cate.name == category))?.[
     "color"
   ];
   document.getElementById("transHistory").innerHTML =
     `
-  <tr>
-      <td>${date}</td>
-      <td>${description}</td>
-      <td>
-          <span class = 'category' style = 'background-color:${categoryColor}'>
-          ${category}
-          </span>
-          </td>
-      <td>${amount}</td>
-      </tr>
-      ` + document.getElementById("transHistory").innerHTML;
+            <tr>
+                <td>${date}</td>
+                <td>${description}</td>
+                <td>
+                    <span class = 'category' style = 'background-color:${
+                      categoryColor
+                    }'>
+                    ${category}
+                    </span>
+                </td>
+
+                <td class = ${
+                  type.toLowerCase() == "income" ? "good" : "bad"
+                }>${type.toLowerCase() == "income" ? "+" : "-"}$${
+          amount
+        }</td>
+            </tr>
+            ` + document.getElementById("transHistory").innerHTML;
   if (type == "Expense") {
     document.getElementById("expense").innerHTML =
       parseInt(document.getElementById("expense").innerHTML) + amount;
