@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  font-family: "Courier New", Courier, monospace;
+}
+section {
+  margin-left: 2.5%;
+}
+body {
+  background-color: rgb(241, 255, 204);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.good{
+  color: green;
+}
+.bad{
+  color: rgb(247, 88, 88);
+}
+/* Header Styling */
+
+header {
+  width: 90%;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 0.333fr 0.3333fr 0.333fr;
+  background-color: white;
+
+}
+header p {
+  text-align: center;
+  font-weight: bolder;
+  font-size: large;
+}
+header p,
+header h2 {
+  margin: 10px;
+}
+/* Header styling ended */
+
+/* section #dashboard styling  */
+#dashboard {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#dashboard div {
+  width: 90%;
+  border: 0.2px solid gray;
+  height: 60px;
+}
+#dashboard div p {
+  margin: 10px;
+}
+
+#expense{
+  color: rgb(255, 60, 60);
+}
+/* section #dashboard styling ended */
+
+/* section actions styling */
+#actions {
+  width: 90%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#actions div {
+  width: 95%;
+  border: 0.2px solid gray;
+  /* height: 200px; */
+}
+#actions div p {
+  margin: 10px;
+}
+#transEntry span {
+  display: block;
+}
+#transEntry span:nth-child(3) input {
+  width: 72%;
+}
+#transEntry span select {
+  outline: none;
+}
+#transEntry span input,
+#transEntry span button,
+#transEntry span select {
+  outline: none;
+  margin: 10px;
+  font-size: medium;
+}
+#transEntry span input[type="date"] {
+  width: 74.5%;
+}
+/* section actions styling ended*/
+
+/* transactionhistory styling */
+
+#history {
+  width: 90%;
+}
+#history table {
+  margin-top: 10px;
+  width: 100%;
+  border-spacing: 10px;
+}
+#history table thead {
+  background-color: aqua;
+}
+.category{
+  border-radius: 10px;
+  /* width: min-content; */
+  padding: 5px;
+  font-size: small;
+  color: white;
+}
+#history table td{
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 1px solid green;
+}
+
+/* transactionhistory styling  ended*/

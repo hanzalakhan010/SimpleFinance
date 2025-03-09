@@ -1,0 +1,19 @@
+{
+  "name": "simplefinance",
+  "version": "1.0.0",
+  "description": "simple finance app",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanzalakhan010/SimpleFinance.git"
+  },
+  "author": "Hanzala Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanzalakhan010/SimpleFinance/issues"
+  },
+  "homepage": "https://github.com/hanzalakhan010/SimpleFinance#readme"
+}
