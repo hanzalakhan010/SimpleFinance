@@ -99,6 +99,7 @@ header h2 {
 
 #history {
   width: 90%;
+  height: 100px;
 }
 #history table {
   margin-top: 10px;
