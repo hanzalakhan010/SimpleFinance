@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/hanzalakhan010/SimpleFinance#readme",
   "dependencies": {
-    "mongoose": "^8.13.1"
+    "express": "^4.21.2",
+    "mongoose": "^8.13.1",
+    "nodemon": "^3.1.9"
   }
 }
