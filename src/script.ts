@@ -13,7 +13,7 @@ const months: string[] = [
   "November",
   "December",
 ];
-let categories: { name: string; color: string }[] = [];
+let categories: { name: string; color: string,type:string }[] = [];
 let summaryData: any;
 
 function setDate(): void {
@@ -28,7 +28,7 @@ function setDate(): void {
 function loadCategories(): void {
   fetch(`${host}/categories`)
     .then((res) => res.json())
-    .then((data: { name: string; color: string }[]) => {
+    .then((data: {name: string; color: string,type:string }[]) => {
       categories = data;
       const transCategoryElement = document.getElementById("transCategory") as HTMLSelectElement;
       if (transCategoryElement) {
@@ -93,8 +93,10 @@ function loadSummary(): void {
 
 function addTrans(): void {
   const amount: number = Number((document.getElementById("transAmount") as HTMLInputElement).value);
-  const type: string = (document.getElementById("transType") as HTMLSelectElement).value;
+  // const type: string = (document.getElementById("transType") as HTMLSelectElement).value;
   const category: string = (document.getElementById("transCategory") as HTMLSelectElement).value;
+  const categoryType = categories.find((cate) => (cate.name === category))?.type;
+  const type: string = categoryType === "income" ? "Income" : "Expense";
   const date: string = (document.getElementById("transDate") as HTMLInputElement).value;
   const description: string = (document.getElementById("transDescription") as HTMLTextAreaElement).value;
   const categoryColor: string | undefined = categories.find((cate) => (cate.name === category))?.color;

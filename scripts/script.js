@@ -89,13 +89,15 @@ function loadSummary() {
     });
 }
 function addTrans() {
-    var _a;
+    var _a, _b;
     const amount = Number(document.getElementById("transAmount").value);
-    const type = document.getElementById("transType").value;
+    // const type: string = (document.getElementById("transType") as HTMLSelectElement).value;
     const category = document.getElementById("transCategory").value;
+    const categoryType = (_a = categories.find((cate) => (cate.name === category))) === null || _a === void 0 ? void 0 : _a.type;
+    const type = categoryType === "income" ? "Income" : "Expense";
     const date = document.getElementById("transDate").value;
     const description = document.getElementById("transDescription").value;
-    const categoryColor = (_a = categories.find((cate) => (cate.name === category))) === null || _a === void 0 ? void 0 : _a.color;
+    const categoryColor = (_b = categories.find((cate) => (cate.name === category))) === null || _b === void 0 ? void 0 : _b.color;
     const transHistoryElement = document.getElementById("transHistory");
     transHistoryElement.innerHTML = `
             <tr>
