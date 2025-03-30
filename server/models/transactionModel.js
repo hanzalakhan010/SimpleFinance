@@ -4,28 +4,33 @@ const transactionSchema = mongoose.Schema({
     type: Number,
   },
   type: {
-    type: String,
-    required: true,
+    type: String
+    , required: true,
   },
   category: {
-    type: String,
+    type: String
+    , required: true,
+
   },
   categoryColor: {
-    type: String,
+    type: String
+    , required: true,
+
   },
   date: {
     type: String,
+    required: true
   },
   description: {
     type: String,
   },
-},{
-    timestamps:true
+}, {
+  timestamps: true
 }
 );
 
 
-const transactionModel = mongoose.model('transactions',transactionSchema)
+const transactionModel = mongoose.model('transactions', transactionSchema)
 
 
 module.exports = transactionModel

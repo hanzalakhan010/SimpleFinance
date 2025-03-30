@@ -26,6 +26,7 @@ app.post("/transactions", async (req, res) => {
     let transaction = await Transactions.create(req.body)
     res.status(201).json(transaction);
 
+
   }
   catch (err) {
     console.log(err)
