@@ -35,6 +35,24 @@
       "categoryColor": "#f1c40f",
       "date": "2025-03-10",
       "description": ""
+    },
+    {
+      "id": "bbad",
+      "amount": 1000,
+      "type": "expense",
+      "category": "Food",
+      "categoryColor": "#3498db",
+      "date": "2025-03-30",
+      "description": ""
+    },
+    {
+      "id": "4a96",
+      "amount": 11,
+      "type": "expense",
+      "category": "Food",
+      "categoryColor": "#3498db",
+      "date": "2025-03-30",
+      "description": ""
     }
   ],
   "categories": [
