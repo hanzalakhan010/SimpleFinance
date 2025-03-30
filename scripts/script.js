@@ -54,18 +54,15 @@ function loadTranSHistory() {
                 <td>${trans.date}</td>
                 <td>${trans.description}</td>
                 <td>
-                    <span class = 'category' style = 'background-color:${
-                      trans.categoryColor
-                    }'>
+                    <span class = 'category' style = 'background-color:${trans.categoryColor
+          }'>
                     ${trans.category}
                     </span>
                 </td>
 
-                <td class = ${
-                  trans.type.toLowerCase() == "income" ? "good" : "bad"
-                }>${trans.type.toLowerCase() == "income" ? "+" : "-"}$${
-          trans.amount
-        }</td>
+                <td class = ${trans.type.toLowerCase() == "income" ? "good" : "bad"
+          }>${trans.type.toLowerCase() == "income" ? "+" : "-"}$${trans.amount
+          }</td>
             </tr>
             `;
       }
@@ -82,24 +79,10 @@ function updateSummary() {
     body: JSON.stringify(summaryData),
   });
 }
-function loadSummary() {
-  fetch(`${host}/summaryData`)
-    .then((res) => res.json())
-    .then((data) => {
-      summaryData = data;
-      let date = new Date();
-      document.getElementById("date").innerHTML = `${
-        months[date.getMonth()]
-      } - ${date.getFullYear()} `;
-      //   document.getElementById("balance").innerHTML = `$${data.currentBalance}`;
-      //   document.getElementById("income").innerHTML = `$${data.monthlyIncome}`;
-      //   document.getElementById("expense").innerHTML = `$${data.monthlyExpenses}`;
-      //   document.getElementById("savings").innerHTML = `$${data.savingsProgress}`;
-      //   document.getElementById(
-      //     "budgetRemaining"
-      //   ).innerHTML = `${data.budgetRemaining}%`;
-    });
-}
+let date = new Date();
+document.getElementById("date").innerHTML = `${months[date.getMonth()]
+} - ${date.getFullYear()} `;
+
 function addTrans() {
   let amount = Number(document.getElementById("transAmount").value);
   let type = document.getElementById("transType").value;
@@ -115,18 +98,15 @@ function addTrans() {
                 <td>${date}</td>
                 <td>${description}</td>
                 <td>
-                    <span class = 'category' style = 'background-color:${
-                      categoryColor
-                    }'>
+                    <span class = 'category' style = 'background-color:${categoryColor
+    }'>
                     ${category}
                     </span>
                 </td>
 
-                <td class = ${
-                  type.toLowerCase() == "income" ? "good" : "bad"
-                }>${type.toLowerCase() == "income" ? "+" : "-"}$${
-          amount
-        }</td>
+                <td class = ${type.toLowerCase() == "income" ? "good" : "bad"
+    }>${type.toLowerCase() == "income" ? "+" : "-"}$${amount
+    }</td>
             </tr>
             ` + document.getElementById("transHistory").innerHTML;
   if (type == "Expense") {
@@ -156,6 +136,5 @@ function addTrans() {
 }
 
 setDate();
-loadSummary();
 loadCategories();
 loadTranSHistory();
